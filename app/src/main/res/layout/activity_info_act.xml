@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgs"
+    tools:context=".Info_act">
+
+    <VideoView
+        android:id="@+id/VvInfo"
+        android:layout_width="360dp"
+        android:layout_height="184dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginLeft="22dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginBottom="348dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.222" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="360dp"
+        android:layout_height="430dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginLeft="22dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginBottom="28dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageButton
+            android:id="@+id/IbMaps"
+            android:layout_width="112dp"
+            android:layout_height="109dp"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="300dp"
+            android:background="@android:color/transparent"
+            android:onClick="mapa"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/location" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="317dp"
+            android:layout_height="257dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:text="Bienvenido a Banco BPM donde podrás manejar tus finanzas y solicitar los préstamos de nuestro banco, ofrecemos los mejores beneficios para nuestros clientes. No esperes más y se parte de uno de los bancos más grandes a nivel latinoamerica y comienza a ganar con nosotros y cumplir tus sueños."
+            android:textAllCaps="false"
+            android:textSize="20dp"
+            android:textStyle="italic" />
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgs"
+    tools:context=".Home_act">
+
+    <ViewFlipper
+        android:id="@+id/slider"
+        android:layout_width="400dp"
+        android:layout_height="476dp"
+        android:layout_marginBottom="308dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"></ViewFlipper>
+
+    <TableLayout
+        android:layout_width="401dp"
+        android:layout_height="249dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="477dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginRight="1dp"
+        android:layout_marginBottom="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.067"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/IvCliente"
+                    android:layout_width="170dp"
+                    android:layout_height="114dp"
+                    android:onClick="Cliente"
+                    app:layout_constraintEnd_toStartOf="@+id/IvPrestamos"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/perfil_men" />
+
+                <TextView
+                    android:id="@+id/TvUsuario"
+                    android:layout_width="150dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="36dp"
+                    android:layout_marginLeft="36dp"
+                    android:layout_marginTop="68dp"
+                    android:layout_marginEnd="34dp"
+                    android:layout_marginRight="34dp"
+                    android:text="Gestionar Cliente"
+                    android:textSize="11sp"
+                    app:layout_constraintEnd_toEndOf="@+id/IvCliente"
+                    app:layout_constraintStart_toStartOf="@+id/IvCliente"
+                    app:layout_constraintTop_toTopOf="@+id/IvCliente" />
+
+                <ImageView
+                    android:id="@+id/IvPrestamos"
+                    android:layout_width="170dp"
+                    android:layout_height="114dp"
+                    android:layout_marginEnd="1dp"
+                    android:layout_marginRight="1dp"
+                    android:onClick="Prestamos"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/IvCliente"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/dinero_men" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="150dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="35dp"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginTop="68dp"
+                    android:layout_marginEnd="35dp"
+                    android:layout_marginRight="35dp"
+                    android:text="Calcular Prestamos"
+                    android:textSize="11sp"
+                    app:layout_constraintEnd_toEndOf="@+id/IvPrestamos"
+                    app:layout_constraintHorizontal_bias="0.54"
+                    app:layout_constraintStart_toStartOf="@+id/IvPrestamos"
+                    app:layout_constraintTop_toTopOf="@+id/IvPrestamos" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/IvSecure"
+                    android:layout_width="170dp"
+                    android:layout_height="114dp"
+                    android:onClick="Seguridad"
+                    app:layout_constraintEnd_toStartOf="@+id/IvInfo"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/secure_men" />
+
+                <TextView
+                    android:id="@+id/TvMaps"
+                    android:layout_width="150dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="36dp"
+                    android:layout_marginLeft="36dp"
+                    android:layout_marginTop="68dp"
+                    android:layout_marginEnd="34dp"
+                    android:layout_marginRight="34dp"
+                    android:text="Seguridad"
+                    android:textSize="11sp"
+                    app:layout_constraintEnd_toEndOf="@+id/IvSecure"
+                    app:layout_constraintHorizontal_bias="0.58"
+                    app:layout_constraintStart_toStartOf="@+id/IvSecure"
+                    app:layout_constraintTop_toTopOf="@+id/IvSecure" />
+
+                <ImageView
+                    android:id="@+id/IvInfo"
+                    android:layout_width="170dp"
+                    android:layout_height="114dp"
+                    android:layout_marginEnd="1dp"
+                    android:layout_marginRight="1dp"
+                    android:onClick="Info"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/IvSecure"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/info_men" />
+
+                <TextView
+                    android:id="@+id/TvInfo"
+                    android:layout_width="150dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="68dp"
+                    android:layout_marginEnd="40dp"
+                    android:layout_marginRight="40dp"
+                    android:text="Información"
+                    android:textSize="11sp"
+                    app:layout_constraintEnd_toEndOf="@+id/IvInfo"
+                    app:layout_constraintHorizontal_bias="0.56"
+                    app:layout_constraintStart_toStartOf="@+id/IvInfo"
+                    app:layout_constraintTop_toTopOf="@+id/IvInfo" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </TableRow>
+
+    </TableLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

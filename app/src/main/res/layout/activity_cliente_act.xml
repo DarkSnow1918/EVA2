@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgs"
+    tools:context=".Cliente_act">
+
+    <LinearLayout
+        android:layout_width="340dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginRight="36dp"
+        android:layout_marginBottom="88dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/BtnSave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="GuardarCliente"
+            android:text="GUARDAR CLIENTE" />
+
+        <Button
+            android:id="@+id/BtnShow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="MostrarInsumos"
+            android:text="MOSTRAR CLIENTE" />
+
+        <Button
+            android:id="@+id/BtnDelete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="EliminarCliente"
+            android:text="ELIMINAR CLIENTE" />
+
+        <Button
+            android:id="@+id/BtnUpdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="UpdateCliente"
+            android:text="ACTUALIZAR CLIENTE" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="191dp"
+        android:layout_height="113dp"
+        android:layout_marginStart="110dp"
+        android:layout_marginLeft="110dp"
+        android:layout_marginTop="84dp"
+        android:layout_marginEnd="110dp"
+        android:layout_marginRight="110dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/base" />
+
+    <LinearLayout
+        android:layout_width="340dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="240dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginRight="36dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/EtCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Ingrese Código"
+            android:inputType="textPersonName"
+            android:textColor="@color/common_google_signin_btn_text_dark_focused"
+            android:textColorHint="@android:color/holo_blue_dark" />
+
+        <EditText
+            android:id="@+id/EtName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Ingrese Nombre"
+            android:inputType="textPersonName"
+            android:textColor="@color/common_google_signin_btn_text_dark_focused"
+            android:textColorHint="@android:color/holo_blue_dark" />
+
+        <EditText
+            android:id="@+id/EtSalario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Ingrese Salario"
+            android:inputType="textPersonName"
+            android:textColor="@color/common_google_signin_btn_text_dark_focused"
+            android:textColorHint="@android:color/holo_blue_dark" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
